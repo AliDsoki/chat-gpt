@@ -1,20 +1,23 @@
 [app]
+# General
 title = MyApp
 package.name = myapp
 package.domain = com.example
 
-# تحديد مصدر الكود (المجلد الرئيسي)
-source.dir = .
-
-# تضمين الامتدادات الضرورية
+# Include extensions
 source.include_exts = py,png,jpg,kv,atlas
 
-# المتطلبات
+# Requirements
 requirements = python3,kivy
-# إعدادات الأندرويد
-android.api = 31
-android.ndk = 23b
-android.arch = arm64-v8a
 
-# إضافة رقم إصدار التطبيق
-version = 1.0.0
+# Android specific settings
+android.api = 33
+android.ndk = 23b
+android.archs = arm64-v8a
+
+# Path for Android SDK (default path should work)
+# android.sdk = /path/to/android-sdk
+# android.ndk_path = /path/to/android-ndk
+
+# Buildozer settings
+# p4a.source_dir = /root/.cache/p4a  # Removed or commented this line to avoid issues
